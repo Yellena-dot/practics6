@@ -1,10 +1,9 @@
 'use strict';
-function first(){
+function first() {
   //Do something
-setTimeout(function(){
-  console.log(1);
-}, 500);
-
+  setTimeout(function () {
+    console.log(1);
+  }, 500);
 }
 
 function second() {
@@ -16,7 +15,7 @@ second();
 
 // callback function
 
-/* callback function - функция которая быть выполнена после того как другая функция завершила свое выполнение */
+/* callback function - функция которая должна быть выполнена после того как другая функция завершила свое выполнение */
 
 /* шаблон callback function - то что в другую функцию в качестве аргумента
  в будущем мы сможем передать другую функцию */
@@ -33,12 +32,11 @@ function learnJS(lang, callback) {
   callback();
 }
 
-function done(){
-console.log('Я прошел этот урок');
+function done() {
+  console.log('Я прошел этот урок');
 }
 
-learnJS('JavaScript', done);// передали функцию как callback
+learnJS('JavaScript', done); // передали функцию как callback
 
 /* функции callback позволяют нам быть уверенными в том, что определенный код 
 не начнет исполнение до того момента пока другой код не завершит свое исполнение*/
-
